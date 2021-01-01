@@ -13,7 +13,7 @@
     <![endif]-->
     <title>Prajwal Gangawane - personal website</title>
     <meta name="description" content="">
-    <meta name="author" content="WebThemez">
+    <meta name="author" content="Prajwal">
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -31,7 +31,7 @@
     <link href="font/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload=display_ct();>
     <header class="header">
         <div class="container">
             <nav class="navbar navbar-inverse" role="navigation">
@@ -84,8 +84,20 @@
                         <div class="da-img"></div>
                     </div>
                     <div class="da-slide">
-                        <h2>Electronic Circuit Designs</h2>
+                        <h2>Electronics</h2>
                         <p>To develop hardware which improves th overall Society</p>
+                        <div class="da-img"></div>
+                    </div>
+
+		    <div class="da-slide">
+                        <h2> Robotics </h2>
+                        <p>Keen interest to develop reducing human errors and providing with safety and more reliability</p>
+                        <div class="da-img"></div>
+                    </div>
+
+		    <div class="da-slide">
+                        <h2> Telecom.. </h2>
+                        <p></p>
                         <div class="da-img"></div>
                     </div>
 				<!--  <nav class="da-arrows">
@@ -99,7 +111,7 @@
     <section id="introText">
         <div class="container">
             <div class="text-center">
-            <h1>Welcome! I am Praj</h1>
+            <h1>Welcome! </h1>
               <p> With the vast knowledge of Entc along with a Keen interest in Robotics my goals are already set up at a very high level. Learning many more things before I Graduate. This website is made for me to connect and to show my interest in the current time.</p>
             </div>
         </div>
@@ -117,8 +129,8 @@
                 <!-- item -->
                 <div class="col-md-4 text-center tileBox">
                    <div class="txtHead"> <i class="fa fa-desktop"></i>
-                    <h3>Circuits <span class="id-color">Design</span></h3></div>
-                    <p>Learning many languages including Japanese, French, Korean, German, so that I couldd travel the world.</p>
+                    <h3>Electronics Circuits <span class="id-color">Design</span></h3></div>
+                    <p>Taking the core knowledge to action </p>
                 </div>
                 <!-- end: -->
 
@@ -126,6 +138,15 @@
                 <div class="col-md-4 text-center tileBox">
                    <div class="txtHead"> <i class="fa fa-desktop"></i>
                     <h3>Weppage<span class="id-color">Design</span></h3></div>
+                    <p>Designing a full fledge webpage along with the hosting in local as well as global server.</p>
+                </div>
+                <!-- end: -->
+
+
+		<!-- item -->
+                <div class="col-md-4 text-center tileBox">
+                   <div class="txtHead"> <i class="fa fa-desktop"></i>
+                    <h3>International<span class="id-color"> Languages </span></h3></div>
                     <p>Learning many languages including Japanese, French, Korean, German, so that I couldd travel the world.</p>
                 </div>
                 <!-- end: -->
@@ -134,17 +155,8 @@
 		<!-- item -->
                 <div class="col-md-4 text-center tileBox">
                    <div class="txtHead"> <i class="fa fa-desktop"></i>
-                    <h3>Responsive <span class="id-color">Design</span></h3></div>
-                    <p>Learning many languages including Japanese, French, Korean, German, so that I couldd travel the world.</p>
-                </div>
-                <!-- end: -->
-
-
-		<!-- item -->
-                <div class="col-md-4 text-center tileBox">
-                   <div class="txtHead"> <i class="fa fa-desktop"></i>
-                    <h3>Responsive <span class="id-color">Design</span></h3></div>
-                    <p>Learning many languages including Japanese, French, Korean, German, so that I couldd travel the world.</p>
+                    <h3>Communication<span class="id-color">systems</span></h3></div>
+                    <p>Design for the foundation </p>
                 </div>
                 <!-- end: -->
 
@@ -152,7 +164,7 @@
                 <!-- item -->
                 <div class="col-md-4 text-center tileBox">
                     <div class="txtHead"><i class="fa fa-css3"></i>
-                    <h3>HTML5/CSS3 <span class="id-color">Dev</span></h3></div>
+                    <h3><span class="id-color">Dev</span></h3></div>
                     <p>An amazing tool i last downloaded on my vscode to make this website. Thanks to Sam! with the framework templete he providedmade my work much easier. </p>
                 </div>
                 <!-- end: -->
@@ -160,7 +172,7 @@
                 <!-- item -->
                 <div class="col-md-4 text-center tileBox">
                     <div class="txtHead"><i class="fa fa-lightbulb-o"></i>
-                    <h3>Java <span class="id-color">jQuery</span></h3></div>
+                    <h3>Java <span class="id-color"></span></h3></div>
                     <p>I prefer python more than Java but no i still want to learn more Java i still study different module implementations like ComputerVision by not only Python but also with Java and C++ too..</p>
                 </div>
                 <!-- end: -->
@@ -662,5 +674,22 @@
     <script src="js/jquery.cslider.js" type="text/javascript"></script>
     <script src="js/custom.js" type="text/javascript"></script>
     <script src="js/owl-carousel/owl.carousel.js"></script>
+
+<script type="text/javascript"> 
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var x = new Date()
+document.getElementById('ct').innerHTML = x;
+display_c();
+ }
+</script>
+
+<align = "center">Time:<span id='ct' ></span></align>
+
+
 </body>
 </html>
