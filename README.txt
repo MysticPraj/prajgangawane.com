@@ -2,6 +2,8 @@ Prajwal Gangawane has created to suit a Electronics and Telecommunications Engin
 
 link :: https://mysticpraj.github.io/prajgangawane.com/
 
+also added to discord
+
 Key features
 Twitter Bootstrap 3.1.1
 Valid HTML5 & CSS3
